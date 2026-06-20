@@ -8,6 +8,6 @@ export async function GET(): Promise<NextResponse> {
 export async function POST(request: NextRequest): Promise<NextResponse> {
 	return NextResponse.json({
 		msg: 'this is only testing POST. your request have been ignored.',
-		sth: await request.json()
+		req: await request.json()
 	});
 }
